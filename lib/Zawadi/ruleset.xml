@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset
+        name="Zawadi"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd"
+>
+    <description>The Zawadi coding standard.</description>
+
+    <rule ref="PSR1" />
+    <rule ref="PSR2"/>
+    <rule ref="PSR12"/>
+    <rule ref="PHPCompatibility"/>
+
+</ruleset>
