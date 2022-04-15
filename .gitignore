@@ -1,3 +1,9 @@
-.idea
-vendor
-composer.lock
+# dependencies
+/vendor/
+/composer.lock
+
+# docker
+/docker-compose.override.yml
+
+# local
+/local

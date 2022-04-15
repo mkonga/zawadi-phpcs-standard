@@ -1,0 +1,16 @@
+image: registry.gitlab.com/tumia/php/cli-dev:8.1
+
+stages:
+  - test
+
+test:
+  image: registry.gitlab.com/tumia/php/cli-dev:${PHP_VERSION}
+  parallel:
+    matrix:
+      - PHP_VERSION: ["8.0", "8.1"]
+        COMPOSER_UPDATE_ARGUMENTS: [ "", " --prefer-lowest "]
+  stage: test
+  script:
+    - composer validate
+    - composer update --no-interaction --optimize-autoloader --no-progress ${COMPOSER_UPDATE_ARGUMENTS}
+    - php ./lib/validate.php ./lib/Zawadi/ruleset.xml ./vendor/squizlabs/php_codesniffer/phpcs.xsd
