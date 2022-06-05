@@ -11,4 +11,16 @@
     <rule ref="PSR12"/>
     <rule ref="PHPCompatibility"/>
 
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma"/>
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall.MissingTrailingComma"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses.IncorrectlyOrderedUses"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="spacesCountAroundEqualsSign" value="0" />
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces.DuplicateSpaces"/>
+    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName.NoMatchBetweenTypeNameAndFileName"/>
+
 </ruleset>
