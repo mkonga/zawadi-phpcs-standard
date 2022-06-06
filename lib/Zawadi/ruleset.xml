@@ -45,8 +45,8 @@
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments">
         <properties>
             <property name="forbiddenCommentPatterns" type="array">
-                <element value="Constructor"/>
-                <element value="Created by Phpstorm."/>
+                <element value="/Constructor/"/>
+                <element value="/Created by Phpstorm./"/>
             </property>
         </properties>
     </rule>
