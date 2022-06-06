@@ -37,7 +37,6 @@
                 <element value="inheritdoc"/>
                 <element value="license"/>
                 <element value="package"/>
-                <element value="throws"/>
                 <element value="version"/>
             </property>
         </properties>
